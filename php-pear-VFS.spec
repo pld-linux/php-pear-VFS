@@ -29,7 +29,7 @@ This package provides a Virtual File System API, with backends for:
 supported, and there are both object-based and array-based interfaces
 to directory listing.
 
-This class has in PEAR status: %{_status}.
+In PEAR status of this package is: %{_status}.
 
 %description -l pl
 Ten pakiet dostarcza API Wirtualnego systemu plików, ze wsparciem dla:

@@ -34,12 +34,12 @@ This class has in PEAR status: %{_status}.
 Ten pakiet dostarcza API Wirtualnego systemu plików, ze wsparciem dla:
 - SQL
 - FTP
-- Lokalnych systemów plików
-- Hybrydy SQL i systemu plików.
+- lokalnych systemów plików
+- hybrydy SQL i systemu plików.
 
-... w przysz³o¶ci te¿ dla innych. Zapis/odczt/listowanie plików jest
-wspierane, oraz dostêpny jest interfejs do listowania katalogów oparty
-na obiektach, jak i na tablicy.
+... w przysz³o¶ci te¿ dla innych. Obs³ugiwane s± zapis, odczyt i
+listowanie plików oraz dostêpny jest interfejs do listowania katalogów
+oparty zarówno na obiektach, jak i na tablicy.
 
 Ta klasa ma w PEAR status: %{_status}.
 

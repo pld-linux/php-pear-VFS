@@ -7,14 +7,14 @@ Summary:	%{_pearname} - Virtual File System API
 Summary(pl):	%{_pearname} - API wirtualnego systemu plików
 Name:		php-pear-%{_pearname}
 Version:	0.0.5
-Release:	1
+Release:	1.1
 License:	LGPL
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
 # Source0-md5:	5e706d671d2ddf0809ce80a8305e07b2
 Patch0:		%{name}-path_fix.patch
 URL:		http://pear.php.net/package/VFS/
-BuildRequires:	rpm-php-pearprov >= 4.0.2-98
+BuildRequires:	rpm-php-pearprov >= 4.4.2-11
 Requires:	php-pear
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -46,21 +46,24 @@ oparty zarówno na obiektach, jak i na tablicy.
 Ta klasa ma w PEAR status: %{_status}.
 
 %prep
-%setup -q -c
-%patch0 -p1
+%pear_package_setup
+cd ./%{php_pear_dir}
+%patch0 -p2
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT%{php_pear_dir}/%{_class}
-
-install %{_pearname}-%{version}/*.php	$RPM_BUILD_ROOT%{php_pear_dir}
-install %{_pearname}-%{version}/%{_class}/*.php	$RPM_BUILD_ROOT%{php_pear_dir}/%{_class}
+install -d $RPM_BUILD_ROOT%{php_pear_dir}
+%pear_package_install
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
+%doc install.log
 %dir %{php_pear_dir}/%{_class}
+%{php_pear_dir}/.registry/*.reg
 %{php_pear_dir}/*.php
 %{php_pear_dir}/%{_class}/*.php
+
+%{php_pear_dir}/data/%{_pearname}

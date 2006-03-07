@@ -13,6 +13,7 @@ Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
 # Source0-md5:	5e706d671d2ddf0809ce80a8305e07b2
 Patch0:		%{name}-path_fix.patch
 URL:		http://pear.php.net/package/VFS/
+BuildRequires:	php-pear-PEAR
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
 Requires:	php-common >= 3:4.2.0
 Requires:	php-gettext

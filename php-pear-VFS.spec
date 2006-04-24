@@ -5,12 +5,12 @@
 Summary:	%{_pearname} - Virtual File System API
 Summary(pl):	%{_pearname} - API wirtualnego systemu plików
 Name:		php-pear-%{_pearname}
-Version:	0.0.5
-Release:	3
+Version:	0.1.0
+Release:	1
 License:	LGPL
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
-# Source0-md5:	5e706d671d2ddf0809ce80a8305e07b2
+# Source0-md5:	c38b1f577d98f1185df1b9b65707d8c6
 Patch0:		%{name}-path_fix.patch
 URL:		http://pear.php.net/package/VFS/
 BuildRequires:	php-pear-PEAR

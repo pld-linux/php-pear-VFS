@@ -3,7 +3,7 @@
 %define		_status		beta
 %define		_pearname	%{_class}
 Summary:	%{_pearname} - Virtual File System API
-Summary(pl):	%{_pearname} - API wirtualnego systemu plików
+Summary(pl.UTF-8):   %{_pearname} - API wirtualnego systemu plikÃ³w
 Name:		php-pear-%{_pearname}
 Version:	0.1.0
 Release:	2
@@ -36,16 +36,16 @@ to directory listing.
 
 In PEAR status of this package is: %{_status}.
 
-%description -l pl
-Ten pakiet dostarcza API Wirtualnego systemu plików, ze wsparciem dla:
+%description -l pl.UTF-8
+Ten pakiet dostarcza API Wirtualnego systemu plikÃ³w, ze wsparciem dla:
 - SQL
 - FTP
-- lokalnych systemów plików
-- hybrydy SQL i systemu plików.
+- lokalnych systemÃ³w plikÃ³w
+- hybrydy SQL i systemu plikÃ³w.
 
-... w przysz³o¶ci te¿ dla innych. Obs³ugiwane s± zapis, odczyt i
-listowanie plików oraz dostêpny jest interfejs do listowania katalogów
-oparty zarówno na obiektach, jak i na tablicy.
+... w przyszÅ‚oÅ›ci teÅ¼ dla innych. ObsÅ‚ugiwane sÄ… zapis, odczyt i
+listowanie plikÃ³w oraz dostÄ™pny jest interfejs do listowania katalogÃ³w
+oparty zarÃ³wno na obiektach, jak i na tablicy.
 
 Ta klasa ma w PEAR status: %{_status}.
 

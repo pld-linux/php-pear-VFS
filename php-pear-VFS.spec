@@ -3,7 +3,7 @@
 %define		_status		beta
 %define		_pearname	%{_class}
 Summary:	%{_pearname} - Virtual File System API
-Summary(pl.UTF-8):   %{_pearname} - API wirtualnego systemu plików
+Summary(pl.UTF-8):	%{_pearname} - API wirtualnego systemu plików
 Name:		php-pear-%{_pearname}
 Version:	0.1.0
 Release:	2

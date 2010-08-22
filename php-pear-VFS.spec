@@ -8,7 +8,7 @@ Summary:	%{_pearname} - Virtual File System API
 Summary(pl.UTF-8):	%{_pearname} - API wirtualnego systemu plików
 Name:		php-pear-%{_pearname}
 Version:	0.3.0
-Release:	2
+Release:	3
 License:	LGPL
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
@@ -25,6 +25,9 @@ Requires:	php-pear-Log
 Requires:	php-pear-PEAR-core >= 1:1.4.0-0.b1
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
+
+# http://pear.php.net/bugs/bug.php?id=17795
+%define		_noautoreq	pear(Horde/Kolab/Storage/List.php) pear(Horde/MIME/Magic.php)
 
 %description
 This package provides a Virtual File System API, with backends for:

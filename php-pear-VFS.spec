@@ -1,6 +1,5 @@
 # TODO
 # - check that weird packaging to lib dir
-%define		_class		VFS
 %define		_status		beta
 %define		_pearname	VFS
 %include	/usr/lib/rpm/macros.php
@@ -8,7 +7,7 @@ Summary:	%{_pearname} - Virtual File System API
 Summary(pl.UTF-8):	%{_pearname} - API wirtualnego systemu plików
 Name:		php-pear-%{_pearname}
 Version:	0.3.0
-Release:	4
+Release:	5
 License:	LGPL
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
@@ -18,8 +17,8 @@ URL:		http://pear.php.net/package/VFS/
 BuildRequires:	php-pear-PEAR >= 1:1.4.0-0.b1
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
 BuildRequires:	rpmbuild(macros) >= 1.300
+Requires:	php(core) >= 4.2.0
 Requires:	php(gettext)
-Requires:	php-common >= 3:4.2.0
 Requires:	php-pear
 Requires:	php-pear-Log
 Requires:	php-pear-PEAR-core >= 1:1.4.0-0.b1

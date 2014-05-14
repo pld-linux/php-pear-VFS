@@ -16,7 +16,7 @@ Patch0:		%{name}-path_fix.patch
 URL:		http://pear.php.net/package/VFS/
 BuildRequires:	php-pear-PEAR >= 1:1.4.0-0.b1
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
-BuildRequires:	rpmbuild(macros) >= 1.300
+BuildRequires:	rpmbuild(macros) >= 1.654
 Requires:	php(core) >= 4.2.0
 Requires:	php(gettext)
 Requires:	php-pear
@@ -26,7 +26,7 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 # http://pear.php.net/bugs/bug.php?id=17795
-%define		_noautoreq	pear(Horde/Kolab/Storage/List.php) pear(Horde/MIME/Magic.php)
+%define		_noautoreq_pear Horde/Kolab/Storage/List.php Horde/MIME/Magic.php
 
 %description
 This package provides a Virtual File System API, with backends for:

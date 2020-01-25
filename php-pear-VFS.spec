@@ -2,7 +2,6 @@
 # - check that weird packaging to lib dir
 %define		_status		beta
 %define		_pearname	VFS
-%include	/usr/lib/rpm/macros.php
 Summary:	%{_pearname} - Virtual File System API
 Summary(pl.UTF-8):	%{_pearname} - API wirtualnego systemu plików
 Name:		php-pear-%{_pearname}
